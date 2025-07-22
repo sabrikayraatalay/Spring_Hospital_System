@@ -5,6 +5,5 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ScheduledExample {
-	
-public void deneme() {}
+
 }
