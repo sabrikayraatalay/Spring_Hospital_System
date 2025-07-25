@@ -24,13 +24,4 @@ public class RootEntity<T> {
 		return rootEntity;
 	}
 
-	public static <T> RootEntity<T> error(String errorMessage) {
-
-		RootEntity<T> rootEntity = new RootEntity<>();
-		rootEntity.setData(null);
-		rootEntity.setResult(false);
-		rootEntity.setErrorMessage(errorMessage);
-		return rootEntity;
-	}
-
 }
