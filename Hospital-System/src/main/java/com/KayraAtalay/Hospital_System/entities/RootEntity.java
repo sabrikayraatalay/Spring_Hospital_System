@@ -15,6 +15,7 @@ public class RootEntity<T> {
 
 	private T data; // if result is true, there will be a data in output
 
+	
 	public static <T> RootEntity<T> ok(T data) {
 
 		RootEntity<T> rootEntity = new RootEntity<>();
