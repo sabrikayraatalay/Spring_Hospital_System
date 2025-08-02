@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
 
 	// BaseException: Custom exception
 	@ExceptionHandler(value = { BaseException.class })
-	public ResponseEntity<ApiError> handleBaseException(BaseException exception, WebRequest request) {
+	public ResponseEntity<ApiError<?>> handleBaseException(BaseException exception, WebRequest request) {
 		return ResponseEntity.badRequest().body(createApiError(exception.getMessage(), request));
 	}
 
